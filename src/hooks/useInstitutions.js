@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 
-const InstitutionHook = () => {
+const useInstitution = () => {
 
     const [institutions, setInstitutions] = useState(null)
 
     const fetchInstitutions = async () => {
-        const response = await fetch('https://inca.evaluacion.gob.ec/api/wssest/amie/01B00020?param1=PRUEBA&param2=ineval2024');
+        const response = await globalThis.fetch('https://inca.evaluacion.gob.ec/api/wssest/amie/01B00020?param1=PRUEBA&param2=ineval2024');
         const json = await response.json()
         setInstitutions(json)
     }
@@ -17,4 +17,4 @@ const InstitutionHook = () => {
     return { institutions }
 }
 
-export default InstitutionHook;
+export default useInstitution;

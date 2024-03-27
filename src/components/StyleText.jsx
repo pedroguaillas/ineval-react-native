@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text } from 'react-native';
-import theme from './theme';
+import theme from './theme.js';
 
 const styles = StyleSheet.create({
     text: {
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         fontWeight: theme.fontWeights.bold
     },
     subheading: {
-        fontSize: theme.fontWeights.bold
+        fontSize: theme.fontSizes.subheading
     }
 })
 
