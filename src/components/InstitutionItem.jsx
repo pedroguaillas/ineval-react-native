@@ -4,7 +4,9 @@ import { Text, View } from "react-native";
 const InstitutionItem = (props) => {
     return (
         <View>
-            <Text>Soy el Item</Text>
+            <Text>{props.amie}</Text>
+            <Text>{props.nm_inst}</Text>
+            <Text>{props.nm_prov}</Text>
         </View>
     );
 }
